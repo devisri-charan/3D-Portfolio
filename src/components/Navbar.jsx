@@ -22,7 +22,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className='text-white font-bold text-[18px] cursor-pointer'>Shre Charan</p>
+          <p className='text-white font-bold text-[18px] cursor-pointer'>Devi Sri Charan</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (

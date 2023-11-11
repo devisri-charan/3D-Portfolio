@@ -14,15 +14,15 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  iiitd,
+  midas,
+  microbiome,
+  icon,
   threejs,
+  python,
+  java,
+  alpha,
+  wasto
 } from "../assets";
 
 export const navLinks = [
@@ -38,6 +38,10 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "",
+    title: "Resume",
+  },
 ];
 
 const services = [
@@ -50,16 +54,24 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "API Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI Trainer",
     icon: creator,
   },
 ];
 
 const technologies = [
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "python",
+    icon: python,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -107,64 +119,46 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  }
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Frontend Developer",
+    company_name: "IIIT Delhi",
+    icon: iiitd,
+    iconBg: "#ffffff",
+    date: "August 2022 - November 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and Developed 11th Convocation Website",
+      "Tech Stack: HTML, CSS, SCSS, Javascript, Bootstrap, Adobe Animate, Adobe Illustrator,",
     ],
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    company_name: "Midas Lab IIIT Delhi",
+    icon: midas,
+    iconBg: "#ffffff",
+    date: "January 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed Backend for storing real-time data of environment monitoring system, using NTP Server",
+      "Created Rest API endpoints to retrieve the data collected from the sensors",
+      "Designed and Developed website for visualizing the sensor’s data, based on user location",
+      "Designed and Developed Product website for the project",
+      "Techstack: JavaScript, React, MongoDB, Tailwind CSS, FastAPI, Python, Mosquito Broker",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Web Developer",
+    company_name: "Microbiome Informatics Lab IIIT Delhi",
+    icon: microbiome,
+    iconBg: "#ffffff",
+    date: "January 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and Developed a website for the new Microbiome Informatics Lab at IIIT Delhi",
+      "Created REST API endpoints to fetch the Meta genome data",
+      "Developed a Website to search and download the Meta genome data",
+      "Tech Stack: JavaScript, React, Tailwind CSS, FastAPI, Python",
     ],
   },
 ];
@@ -198,9 +192,38 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Alpha Messenger",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-stack messaging website with real-time chat functionality and a dynamic user interface for efficient communication and data storage.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: alpha,
+    source_code_link: "https://github.com/devisri-charan/Alpha-Messenger",
+  },
+  {
+    name: "Icon",
+    description:
+      "A full-stack fashion e-commerce platform incorporating seamless user experiences, secure payment processing, and dynamic product management.",
     tags: [
       {
         name: "react",
@@ -211,54 +234,33 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: icon,
+    source_code_link: "https://github.com/devisri-charan/icon",
   },
   {
-    name: "Job IT",
+    name: " Wasto",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An ML model to automate most parts of a waste management cycle from source to recycling unit with proper trackage of the waste..",
     tags: [
       {
-        name: "react",
+        name: "TensorFlow",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "OpenCV",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: wasto,
+    source_code_link: "https://github.com/devisri-charan/wasto",
   },
 ];
 
