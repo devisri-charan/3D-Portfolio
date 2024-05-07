@@ -22,31 +22,33 @@ import {
   python,
   java,
   alpha,
-  wasto
+  wasto,
+  artisight
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "about",
+    id: "#about",
     title: "About",
   },
   {
-    id: "work",
+    id: "#work",
     title: "Work",
   },
   {
-    id: "contact",
+    id: "#contact",
     title: "Contact",
   },
   {
-    id: "",
+    id: "https://drive.google.com/drive/folders/1uB_mHzVQc6uKNIYZVA_GZze1a8oEU2u2?usp=sharing",
     title: "Resume",
+    target: '_blank',
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
@@ -54,11 +56,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "API Developer",
+    title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "AI Trainer",
+    title: "AI/ML Enthusiast",
     icon: creator,
   },
 ];
@@ -84,10 +86,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -139,13 +141,13 @@ const experiences = [
     company_name: "Midas Lab IIIT Delhi",
     icon: midas,
     iconBg: "#ffffff",
-    date: "January 2023 - Present",
+    date: "January 2023 - November 2023",
     points: [
-      "Developed Backend for storing real-time data of environment monitoring system, using NTP Server",
-      "Created Rest API endpoints to retrieve the data collected from the sensors",
-      "Designed and Developed website for visualizing the sensor’s data, based on user location",
-      "Designed and Developed Product website for the project",
-      "Techstack: JavaScript, React, MongoDB, Tailwind CSS, FastAPI, Python, Mosquito Broker",
+      "Developed a backend system for a real-time environmental sensing system, handling high-volume sensor data efficiently.",
+      "Created REST API endpoints for robust data retrieval from sensor networks",
+      "Designed a data-driven website for visualizing sensor data, enhancing user interaction and data comprehension.",
+      "Spearheaded the design and development of the project’s product website, focusing on responsive design.",
+      // "Techstack: JavaScript, React, MongoDB, Tailwind CSS, FastAPI, Python, Mosquito Broker",
     ],
   },
   {
@@ -153,12 +155,12 @@ const experiences = [
     company_name: "Microbiome Informatics Lab IIIT Delhi",
     icon: microbiome,
     iconBg: "#ffffff",
-    date: "January 2023 - Present",
+    date: "January 2023 - November 2023",
     points: [
-      "Designed and Developed a website for the new Microbiome Informatics Lab at IIIT Delhi",
-      "Created REST API endpoints to fetch the Meta genome data",
-      "Developed a Website to search and download the Meta genome data",
-      "Tech Stack: JavaScript, React, Tailwind CSS, FastAPI, Python",
+      "Led the development of a special website for the Lab, showcasing research areas, publications, and team",
+      "Created efficient REST API endpoints for retrieving and processing complex Meta genome data.",
+      "Developed a web interface for meta-genome data search and download, enhancing accessibility for researchers.",
+      // "Tech Stack: JavaScript, React, Tailwind CSS, FastAPI, Python",
     ],
   },
 ];
@@ -191,6 +193,31 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "ArtiSight",
+    description:
+      "An AI Photo Critique Assistant utilizing LLMs to analyze and critique photos by providing actionable insights and personalized learning recommendations.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "LLMs",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: artisight,
+    source_code_link: "https://github.com/devisri-charan/ArtiSight",
+  },
   {
     name: "Alpha Messenger",
     description:
@@ -234,8 +261,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "nodeJS",
         color: "pink-text-gradient",
+      },
+      {
+        name: "expressJS",
+        color: "blue-text-gradient",
       },
     ],
     image: icon,

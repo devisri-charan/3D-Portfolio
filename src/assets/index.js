@@ -28,7 +28,8 @@ import iiitd from './company/iiitd.png';
 
 import icon from './icon.jpg';
 import alpha from './alpha.png';
-import wasto from "./wasto.png"
+import wasto from "./wasto.png";
+import artisight from "./artisight.jpg";
 
 export {
   logo,
@@ -58,5 +59,6 @@ export {
   microbiome,
   icon,
   alpha,
-  wasto
+  wasto,
+  artisight
 };
