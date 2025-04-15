@@ -18,13 +18,14 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png"
 
 import midas from "./company/midas.jpg";
 import microbiome from "./company/microbiome.png";
 import iiitd from './company/iiitd.png';
+import lumiq from './company/lumiq.webp';
 
 import icon from './icon.jpg';
 import alpha from './alpha.png';
@@ -53,10 +54,11 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
+  aws,
   iiitd,
   midas,
   microbiome,
+  lumiq,
   icon,
   alpha,
   wasto,

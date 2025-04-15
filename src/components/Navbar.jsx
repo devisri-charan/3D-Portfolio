@@ -1,13 +1,28 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { styles } from '../styles';
 import { logo, menu, close } from '../assets';
 import { navLinks } from '../constants';
 
-
 const Navbar = () => {
-  const [active, setActive] = useState("'");
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLinkClick = (link) => {
+    setActive(link.title);
+    if (link.id.startsWith('#')) {
+      // Handle hash links
+      const element = document.querySelector(link.id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Handle regular route links
+      navigate(link.id);
+    }
+    setToggle(false);
+  };
 
   return (
     <nav className={`
@@ -22,7 +37,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className='text-white font-bold text-[18px] cursor-pointer'>Devi Sri Charan</p>
+          <p className='text-white font-bold text-[18px] cursor-pointer'>Charan</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
@@ -30,8 +45,12 @@ const Navbar = () => {
               className={`${active === link.title
                 ? "text-white"
                 : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}>
-              <a href={`${link.id}`} target={`${link.target}`}>{link.title}</a>
+              onClick={() => handleLinkClick(link)}>
+              {link.id.startsWith('#') ? (
+                <a href={link.id}>{link.title}</a>
+              ) : (
+                <Link to={link.id}>{link.title}</Link>
+              )}
             </li>
           ))}
         </ul>
@@ -44,11 +63,12 @@ const Navbar = () => {
                   className={`${active === link.title
                     ? "text-white"
                     : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
-                  }}>
-                  <a href={`${link.id}`} target={`${link.target}`}>{link.title}</a>
+                  onClick={() => handleLinkClick(link)}>
+                  {link.id.startsWith('#') ? (
+                    <a href={link.id}>{link.title}</a>
+                  ) : (
+                    <Link to={link.id}>{link.title}</Link>
+                  )}
                 </li>
               ))}
             </ul>

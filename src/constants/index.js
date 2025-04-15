@@ -17,8 +17,9 @@ import {
   iiitd,
   midas,
   microbiome,
+  lumiq,
   icon,
-  threejs,
+  aws,
   python,
   java,
   alpha,
@@ -40,9 +41,8 @@ export const navLinks = [
     title: "Contact",
   },
   {
-    id: "https://drive.google.com/drive/folders/1uB_mHzVQc6uKNIYZVA_GZze1a8oEU2u2?usp=sharing",
+    id: "/resume",
     title: "Resume",
-    target: '_blank',
   },
 ];
 
@@ -52,24 +52,20 @@ const services = [
     icon: web,
   },
   {
-    title: "UI/UX Designer",
-    icon: mobile,
+    title: "Backend Developer",
+    icon: creator,
   },
   {
-    title: "Backend Developer",
+    title: "AWS Data Engineer",
     icon: backend,
   },
   {
-    title: "AI/ML Enthusiast",
-    icon: creator,
+    title: "UI/UX Designer",
+    icon: mobile,
   },
 ];
 
 const technologies = [
-  {
-    name: "java",
-    icon: java,
-  },
   {
     name: "python",
     icon: python,
@@ -86,10 +82,14 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
   {
     name: "React JS",
     icon: reactjs,
@@ -111,20 +111,60 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   }
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // }
 ];
 
 const experiences = [
+  {
+    title: "Software Engineer",
+    company_name: "Lumiq",
+    icon: lumiq,
+    iconBg: "#ffffff",
+    date: "Jun 2024 -Present",
+    points: [
+      "Developed a deduplication engine for processing insurance data, reducing duplicate records by 40% and improving data accuracy, leading to enhanced operational efficiency for multiple insurance company clients.",
+      "Built an internal project management and resource allocation platform, increasing team productivity by 30% by streamlining project tracking and optimizing resource utilization.",
+      "Developed a Claims Management System, which reduced claim processing time by 25%. Implemented monitoring, automation testing, and Docker containerization, leading to a 30% reduction in deployment failures.",
+      "Built a stateful application using Strapi for dynamic content management, integrating a custom frontend with robust API validations and PDF export functionality. Successfully deployed the platform using Docker, improving content management efficiency by 35%.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Microbiome Informatics Lab IIIT Delhi",
+    icon: microbiome,
+    iconBg: "#ffffff",
+    date: "January 2023 - November 2023",
+    points: [
+      "Led the development of a portfolio website for the Lab, which increased the online visibility of research areas and publications by 60%",
+      "Created efficient REST API endpoints that improved retrieval and processing time of complex Meta genome data by 45%",
+      "Developed a web interface for meta-genome data search and download, boosting accessibility for researchers by 50%.",
+      // "Tech Stack: JavaScript, React, Tailwind CSS, FastAPI, Python",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Midas Lab IIIT Delhi",
+    icon: midas,
+    iconBg: "#ffffff",
+    date: "January 2023 - November 2023",
+    points: [
+      "Developed a backend system for a real-time environmental sensing system, efficiently handling over 1 Lakh data points per day, reducing data processing time by 30%.",
+      "Created robust REST API endpoints that improved data retrieval speed by 40% for high-volume sensor networks. ",
+      "Developed a data-driven website for visualizing sensor data, increasing user interaction and data comprehension by 50%.",
+      "Designed and Developed the product website for marketing purposes, focusing on responsive design.",
+      // "Techstack: JavaScript, React, MongoDB, Tailwind CSS, FastAPI, Python, Mosquito Broker",
+    ],
+  },
   {
     title: "Frontend Developer",
     company_name: "IIIT Delhi",
@@ -132,35 +172,8 @@ const experiences = [
     iconBg: "#ffffff",
     date: "August 2022 - November 2022",
     points: [
-      "Designed and Developed 11th Convocation Website",
-      "Tech Stack: HTML, CSS, SCSS, Javascript, Bootstrap, Adobe Animate, Adobe Illustrator,",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Midas Lab IIIT Delhi",
-    icon: midas,
-    iconBg: "#ffffff",
-    date: "January 2023 - November 2023",
-    points: [
-      "Developed a backend system for a real-time environmental sensing system, handling high-volume sensor data efficiently.",
-      "Created REST API endpoints for robust data retrieval from sensor networks",
-      "Designed a data-driven website for visualizing sensor data, enhancing user interaction and data comprehension.",
-      "Spearheaded the design and development of the project’s product website, focusing on responsive design.",
-      // "Techstack: JavaScript, React, MongoDB, Tailwind CSS, FastAPI, Python, Mosquito Broker",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Microbiome Informatics Lab IIIT Delhi",
-    icon: microbiome,
-    iconBg: "#ffffff",
-    date: "January 2023 - November 2023",
-    points: [
-      "Led the development of a special website for the Lab, showcasing research areas, publications, and team",
-      "Created efficient REST API endpoints for retrieving and processing complex Meta genome data.",
-      "Developed a web interface for meta-genome data search and download, enhancing accessibility for researchers.",
-      // "Tech Stack: JavaScript, React, Tailwind CSS, FastAPI, Python",
+      "Conceptualized, designed, and developed the official website for the IIIT Delhi 11th Convocation 2022.",
+      "Tech Stack: HTML, CSS, SCSS, Javascript, Bootstrap, Adobe Suite,",
     ],
   },
 ];
