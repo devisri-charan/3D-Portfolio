@@ -26,6 +26,8 @@ import midas from "./company/midas.jpg";
 import microbiome from "./company/microbiome.png";
 import iiitd from './company/iiitd.png';
 import lumiq from './company/lumiq.webp';
+import hcd from './company/hcd.png';
+import stealth from './company/stealth.jpg';
 
 import icon from './icon.jpg';
 import alpha from './alpha.png';
@@ -62,5 +64,7 @@ export {
   icon,
   alpha,
   wasto,
-  artisight
+  artisight,
+  hcd,
+  stealth
 };

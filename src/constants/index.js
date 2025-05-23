@@ -24,7 +24,9 @@ import {
   java,
   alpha,
   wasto,
-  artisight
+  artisight,
+  hcd,
+  stealth
 } from "../assets";
 
 export const navLinks = [
@@ -125,6 +127,7 @@ const technologies = [
 ];
 
 const experiences = [
+
   {
     title: "Software Engineer",
     company_name: "Lumiq",
@@ -134,8 +137,21 @@ const experiences = [
     points: [
       "Developed a deduplication engine for processing insurance data, reducing duplicate records by 40% and improving data accuracy, leading to enhanced operational efficiency for multiple insurance company clients.",
       "Built an internal project management and resource allocation platform, increasing team productivity by 30% by streamlining project tracking and optimizing resource utilization.",
-      "Developed a Claims Management System, which reduced claim processing time by 25%. Implemented monitoring, automation testing, and Docker containerization, leading to a 30% reduction in deployment failures.",
-      "Built a stateful application using Strapi for dynamic content management, integrating a custom frontend with robust API validations and PDF export functionality. Successfully deployed the platform using Docker, improving content management efficiency by 35%.",
+      "Developed an AI-powered virtual sales agent integrating the deduplication engine backend, enabling automated demos and real-time insights, resulting in a 25% increase in client product engagement.",
+      "Engineered a data correction script for a major insurance client, removing over 350,000 duplicate financial exposure records, significantly enhancing data reliability and financial reporting accuracy.",
+    ],
+  },
+  {
+    title: "Product Engineer",
+    company_name: "Stealth Startup",
+    icon: stealth,
+    iconBg: "#ffffff",
+    date: "Feb 2025 - May 2025",
+    points: [
+      "Collaborated closely with the co-founder as part of a 2-member founding team, contributing to all stages of early productdevelopment in a high-ownership environment.",
+      "Conducted in-depth user research, defined and refined the problem statement, and performed competitive landscape analysis to identify product gaps and differentiation opportunities.",
+      "Designed the product's information architecture and created low-, mid-, and high-fidelity prototypes using Figma to iterate rapidly and align on user experience",
+      "Developed the MVP frontend using React Native and backend using Python and FastAPI, establishing a scalable foundation for future product features and enabling internal testing and investor demos.",
     ],
   },
   {
@@ -167,8 +183,8 @@ const experiences = [
   },
   {
     title: "Frontend Developer",
-    company_name: "IIIT Delhi",
-    icon: iiitd,
+    company_name: "Department of Human Centered Design",
+    icon: hcd,
     iconBg: "#ffffff",
     date: "August 2022 - November 2022",
     points: [
