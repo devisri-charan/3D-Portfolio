@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { styles } from '../styles';
-import resumePDF from '../assets/Devi_Sri_Charan_IIITD_FS_2024.pdf';
+import resumePDF from '../assets/Devi_Sri_Charan_IIITD_SDE_2024.pdf';
 import { motion } from 'framer-motion';
 
 const Resume = () => {

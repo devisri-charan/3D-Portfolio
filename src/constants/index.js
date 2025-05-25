@@ -26,7 +26,9 @@ import {
   wasto,
   artisight,
   hcd,
-  stealth
+  stealth,
+  sr,
+  jsm
 } from "../assets";
 
 export const navLinks = [
@@ -135,7 +137,7 @@ const experiences = [
     iconBg: "#ffffff",
     date: "Jun 2024 -Present",
     points: [
-      "Developed a deduplication engine for processing insurance data, reducing duplicate records by 40% and improving data accuracy, leading to enhanced operational efficiency for multiple insurance company clients.",
+      "Developed a deduplication engine for processing insurance data, reducing duplicate records by 40% and improving data accuracy, leading to enhanced operational efficiency for multiple insurance company clients",
       "Built an internal project management and resource allocation platform, increasing team productivity by 30% by streamlining project tracking and optimizing resource utilization.",
       "Developed an AI-powered virtual sales agent integrating the deduplication engine backend, enabling automated demos and real-time insights, resulting in a 25% increase in client product engagement.",
       "Engineered a data correction script for a major insurance client, removing over 350,000 duplicate financial exposure records, significantly enhancing data reliability and financial reporting accuracy.",
@@ -148,7 +150,7 @@ const experiences = [
     iconBg: "#ffffff",
     date: "Feb 2025 - May 2025",
     points: [
-      "Collaborated closely with the co-founder as part of a 2-member founding team, contributing to all stages of early productdevelopment in a high-ownership environment.",
+      "Collaborated closely with the co-founder as part of a 2-member founding team, contributing to all stages of early product development in a high-ownership environment.",
       "Conducted in-depth user research, defined and refined the problem statement, and performed competitive landscape analysis to identify product gaps and differentiation opportunities.",
       "Designed the product's information architecture and created low-, mid-, and high-fidelity prototypes using Figma to iterate rapidly and align on user experience",
       "Developed the MVP frontend using React Native and backend using Python and FastAPI, establishing a scalable foundation for future product features and enabling internal testing and investor demos.",
@@ -192,6 +194,50 @@ const experiences = [
       "Tech Stack: HTML, CSS, SCSS, Javascript, Bootstrap, Adobe Suite,",
     ],
   },
+];
+
+const education = [
+  {
+    title: "Bachelor of Technology",
+    company_name: "IIIT Delhi",
+    icon: iiitd,
+    iconBg: "#ffffff",
+    date: "2020 - 2024",
+    points: [
+      "Branch: Computer Science and Design",
+      "Department: Human Centered Design",
+      "CGPA: 6.95",
+      "Won 1st Place in SMAI Hackathon conducted by Micron Technology India",
+    ],
+  },
+  {
+    title: "Intermediate Education",
+    company_name: "SR Edu-Center, Warangal",
+    icon: sr,
+    iconBg: "#ffffff",
+    date: "2018 - 2020",
+    points: [
+      "Branch: MPC",
+      "Marks: 971/1000",
+      "JEE Mains January 2020 Percentile: 99.2303444",
+      "JEE Mains September 2020 Percentile: 98.782147",
+      "JEE Mains All India Rank: 8694",
+      "JEE Mains OBC Category Rank: 1629",
+      "JEE Advanced 2020 Score: 122",
+      "JEE Advanced 2020 All India Rank: 9110",
+      "JEE Advanced 2020 OBC Category Rank: 1700",
+    ],
+  },
+  {
+    title: "Secondary Education",
+    company_name: "JSM High School, Warangal",
+    icon: jsm,
+    iconBg: "#ffffff",
+    date: "2016 - 2018",
+    points: [
+      "CGPA: 10/10",
+    ],
+  }
 ];
 
 const testimonials = [
@@ -324,4 +370,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, education };

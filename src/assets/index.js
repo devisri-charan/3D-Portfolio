@@ -28,6 +28,8 @@ import iiitd from './company/iiitd.png';
 import lumiq from './company/lumiq.webp';
 import hcd from './company/hcd.png';
 import stealth from './company/stealth.jpg';
+import sr from './company/sr.jpg';
+import jsm from './company/jsm.png';
 
 import icon from './icon.jpg';
 import alpha from './alpha.png';
@@ -66,5 +68,7 @@ export {
   wasto,
   artisight,
   hcd,
-  stealth
+  stealth,
+  sr,
+  jsm
 };
