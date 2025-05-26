@@ -121,11 +121,11 @@ const technologies = [
   {
     name: "git",
     icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
   }
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // }
 ];
 
 const experiences = [
