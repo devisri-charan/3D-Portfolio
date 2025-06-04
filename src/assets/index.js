@@ -36,6 +36,10 @@ import alpha from './alpha.png';
 import wasto from "./wasto.png";
 import artisight from "./artisight.jpg";
 
+import binu from "./testimonials/binu.jpg";
+import tarini from "./testimonials/tarini.png";
+// import lisa from "./testimonials/lisa.jpg"
+
 export {
   logo,
   backend,
@@ -70,5 +74,8 @@ export {
   hcd,
   stealth,
   sr,
-  jsm
+  jsm,
+  binu,
+  tarini
+  // lisa
 };

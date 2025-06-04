@@ -1,3 +1,4 @@
+import { b } from "maath/dist/index-43782085.esm";
 import {
   mobile,
   backend,
@@ -28,7 +29,10 @@ import {
   hcd,
   stealth,
   sr,
-  jsm
+  jsm,
+  binu,
+  tarini
+  // lisa
 } from "../assets";
 
 export const navLinks = [
@@ -87,14 +91,6 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "java",
-    icon: java,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
@@ -119,6 +115,14 @@ const technologies = [
     icon: aws,
   },
   {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
     name: "git",
     icon: git,
   },
@@ -129,36 +133,36 @@ const technologies = [
 ];
 
 const experiences = [
-
   {
     title: "Software Engineer",
-    company_name: "Lumiq",
+    company_name: "Lumiq | Noida",
     icon: lumiq,
     iconBg: "#ffffff",
-    date: "Jun 2024 -Present",
+    date: "Jun 2024 - Present",
     points: [
-      "Developed a deduplication engine for processing insurance data, reducing duplicate records by 40% and improving data accuracy, leading to enhanced operational efficiency for multiple insurance company clients",
-      "Built an internal project management and resource allocation platform, increasing team productivity by 30% by streamlining project tracking and optimizing resource utilization.",
-      "Developed an AI-powered virtual sales agent integrating the deduplication engine backend, enabling automated demos and real-time insights, resulting in a 25% increase in client product engagement.",
-      "Engineered a data correction script for a major insurance client, removing over 350,000 duplicate financial exposure records, significantly enhancing data reliability and financial reporting accuracy.",
+      "Designed and implemented a high-performance deduplication engine using Python and AWS ETL pipelines, reducing duplicate insurance data records by 40% and improving data quality for multiple enterprise clients.",
+      "Built a scalable internal project management and resource allocation platform using React, NestJS, and PostgreSQL, boosting team productivity by 30% through streamlined tracking and efficient resource utilization.",
+      "Developed a stateful CMS-based application using Strapi (backend) and React (frontend) with robust API validations and PDF export functionality; deployed via Docker, improving content management workflows by 35%.",
+      "Created an AI-powered virtual sales agent using LangChain, LangGraph, and LLMs, with a Next.js frontend using SSR and SSG; enabled real-time demos, increasing client engagement by 25%.",
+      "Wrote a robust Bash data correction script that removed over 350,000 duplicate financial exposure records for a key insurance client, significantly enhancing data reliability and financial reporting accuracy."
     ],
   },
   {
     title: "Product Engineer",
-    company_name: "Stealth Startup",
+    company_name: "Stealth Startup (Social Media Platform) | Remote",
     icon: stealth,
     iconBg: "#ffffff",
     date: "Feb 2025 - May 2025",
     points: [
-      "Collaborated closely with the co-founder as part of a 2-member founding team, contributing to all stages of early product development in a high-ownership environment.",
-      "Conducted in-depth user research, defined and refined the problem statement, and performed competitive landscape analysis to identify product gaps and differentiation opportunities.",
-      "Designed the product's information architecture and created low-, mid-, and high-fidelity prototypes using Figma to iterate rapidly and align on user experience",
-      "Developed the MVP frontend using React Native and backend using Python and FastAPI, establishing a scalable foundation for future product features and enabling internal testing and investor demos.",
+      "Worked directly with the co-founder in a 3-member founding team, taking full ownership across all phases of early-stage product development in a fast-paced startup environment.",
+      "Led user research efforts to validate core assumptions, shaped the problem statement, and performed detailed competitive analysis to identify key differentiators in the social media space.",
+      "Designed scalable information architecture and built iterative low-, mid-, and high-fidelity prototypes using Figma to refine user flows and engagement strategies.",
+      "Engineered the MVP frontend using React Native and built the backend APIs with Python (FastAPI), laying the technical foundation for rapid iteration, internal testing, and investor demonstrations.",
     ],
   },
   {
     title: "Full Stack Developer",
-    company_name: "Microbiome Informatics Lab IIIT Delhi",
+    company_name: "Microbiome Informatics Lab | IIIT Delhi",
     icon: microbiome,
     iconBg: "#ffffff",
     date: "January 2023 - November 2023",
@@ -171,27 +175,26 @@ const experiences = [
   },
   {
     title: "Full Stack Developer",
-    company_name: "Midas Lab IIIT Delhi",
+    company_name: "Midas Lab | IIIT Delhi",
     icon: midas,
     iconBg: "#ffffff",
     date: "January 2023 - November 2023",
     points: [
-      "Developed a backend system for a real-time environmental sensing system, efficiently handling over 1 Lakh data points per day, reducing data processing time by 30%.",
-      "Created robust REST API endpoints that improved data retrieval speed by 40% for high-volume sensor networks. ",
-      "Developed a data-driven website for visualizing sensor data, increasing user interaction and data comprehension by 50%.",
-      "Designed and Developed the product website for marketing purposes, focusing on responsive design.",
-      // "Techstack: JavaScript, React, MongoDB, Tailwind CSS, FastAPI, Python, Mosquito Broker",
+      "Designed and implemented a scalable Flask-based backend system for a real-time environmental sensing platform, efficiently processing over 100,000+ data points per day and reducing data handling latency by 30%.",
+      "Built optimized RESTful API endpoints to support high-throughput sensor networks, enhancing data retrieval speed by 40%.",
+      "Developed a dynamic, data-driven frontend using React and TailwindCSS to visualize real-time sensor data, improving user interaction and data interpretation by 50%.",
+      "Designed and deployed a fully responsive marketing website to showcase the project, focusing on UX/UI best practices and mobile-first design."
     ],
   },
   {
     title: "Frontend Developer",
-    company_name: "Department of Human Centered Design",
+    company_name: "Department of Human Centered Design | IIIT Delhi",
     icon: hcd,
     iconBg: "#ffffff",
     date: "August 2022 - November 2022",
     points: [
       "Conceptualized, designed, and developed the official website for the IIIT Delhi 11th Convocation 2022.",
-      "Tech Stack: HTML, CSS, SCSS, Javascript, Bootstrap, Adobe Suite,",
+      "Tech Stack: HTML, CSS, SCSS, Javascript, Bootstrap, Adobe Suite",
     ],
   },
 ];
@@ -217,7 +220,7 @@ const education = [
     iconBg: "#ffffff",
     date: "2018 - 2020",
     points: [
-      "Branch: MPC",
+      "Group: MPC",
       "Marks: 971/1000",
       "JEE Mains January 2020 Percentile: 99.2303444",
       "JEE Mains September 2020 Percentile: 98.782147",
@@ -243,26 +246,26 @@ const education = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I thought it was impossible to make a website as beautiful as our product, but Charan proved me wrong.",
+    name: "Binu Ann Joseph",
+    designation: "Junior Administrative Officer",
+    company: "Department of Human Centered Design, IIIT Delhi",
+    image: binu,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I've never met a web developer who truly cares about their clients' success like Charan does.",
+    name: "Dr. Tarini Shankar Ghosh",
+    designation: "Head",
+    company: "Microbiome Informatics Lab, IIIT Delhi",
+    image: tarini,
   },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "Stealth Startup",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
