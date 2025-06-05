@@ -88,5 +88,20 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For any inquiries or collaboration opportunities, please reach out through:
 - Email: [vdevisricharan@gmail.com](mailto:vdevisricharan@gmail.com)
-- LinkedIn: [Devi Sri Charan Valupadasu](https://linkedin.com/in/devisricharan)
-- GitHub: [Devi Sri Charan](https://github.com/devisri-charan)
+- LinkedIn: [Devi Sri Charan Valupadasu](https://linkedin.com/in/vdevisricharan)
+- GitHub: [Devi Sri Charan](https://github.com/vdevisricharan)
+
+## Docker Usage
+
+1. Build the Docker image:
+   ```sh
+   docker build -t 3d-portfolio .
+   ```
+2. Run the container:
+   ```sh
+   docker run -p 8080:80 3d-portfolio
+   ```
+3. Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Notes
+- A `fallback.png` image is used for missing or broken technology icons. Place your own in the `public/` folder if you want to customize it.

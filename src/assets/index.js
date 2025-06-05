@@ -16,11 +16,18 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import next from "./tech/next.svg";
+import postgressql from "./tech/postgresql.svg";
+import mysql from "./tech/mysql.svg";
+import nestjs from "./tech/nestjs.svg";
 import tailwind from "./tech/tailwind.png";
+import bootstrap from "./tech/bootstrap.svg"
 import typescript from "./tech/typescript.png";
 import aws from "./tech/aws.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png"
+import docker from "./tech/docker.svg";
+import postman from "./tech/postman.svg";
 
 import midas from "./company/midas.jpg";
 import microbiome from "./company/microbiome.png";
@@ -35,10 +42,11 @@ import icon from './icon.jpg';
 import alpha from './alpha.png';
 import wasto from "./wasto.png";
 import artisight from "./artisight.jpg";
+import securepass from "./securepass.png";
 
 import binu from "./testimonials/binu.jpg";
 import tarini from "./testimonials/tarini.png";
-// import lisa from "./testimonials/lisa.jpg"
+import ganesh from "./testimonials/ganesh.jpg"
 
 export {
   logo,
@@ -60,9 +68,16 @@ export {
   nodejs,
   reactjs,
   redux,
+  next,
+  postgressql,
   tailwind,
+  mysql,
+  nestjs,
+  bootstrap,
   typescript,
   aws,
+  docker,
+  postman,
   iiitd,
   midas,
   microbiome,
@@ -71,11 +86,12 @@ export {
   alpha,
   wasto,
   artisight,
+  securepass,
   hcd,
   stealth,
   sr,
   jsm,
   binu,
-  tarini
-  // lisa
+  tarini,
+  ganesh
 };

@@ -1,4 +1,3 @@
-import { b } from "maath/dist/index-43782085.esm";
 import {
   mobile,
   backend,
@@ -10,11 +9,18 @@ import {
   css,
   reactjs,
   redux,
+  next,
+  postgressql,
   tailwind,
+  nestjs,
+  bootstrap,
+  mysql,
   nodejs,
   mongodb,
   git,
   figma,
+  docker,
+  postman,
   iiitd,
   midas,
   microbiome,
@@ -26,13 +32,14 @@ import {
   alpha,
   wasto,
   artisight,
+  securepass,
   hcd,
   stealth,
   sr,
   jsm,
   binu,
-  tarini
-  // lisa
+  tarini,
+  ganesh
 } from "../assets";
 
 export const navLinks = [
@@ -75,20 +82,20 @@ const services = [
 
 const technologies = [
   {
-    name: "python",
-    icon: python,
-  },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
     name: "CSS 3",
     icon: css,
   },
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
   },
   {
     name: "React JS",
@@ -99,8 +106,28 @@ const technologies = [
     icon: redux,
   },
   {
+    name: "Next JS",
+    icon: next,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgressql,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Nest JS",
+    icon: nestjs,
   },
   {
     name: "Node JS",
@@ -113,6 +140,14 @@ const technologies = [
   {
     name: "AWS",
     icon: aws,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Postman",
+    icon: postman,
   },
   {
     name: "java",
@@ -129,7 +164,8 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  }
+  },
+
 ];
 
 const experiences = [
@@ -167,10 +203,9 @@ const experiences = [
     iconBg: "#ffffff",
     date: "January 2023 - November 2023",
     points: [
-      "Led the development of a portfolio website for the Lab, which increased the online visibility of research areas and publications by 60%",
-      "Created efficient REST API endpoints that improved retrieval and processing time of complex Meta genome data by 45%",
-      "Developed a web interface for meta-genome data search and download, boosting accessibility for researchers by 50%.",
-      // "Tech Stack: JavaScript, React, Tailwind CSS, FastAPI, Python",
+      "Led the end-to-end development of a dedicated research portal, enhancing the Lab's online presence and increasing visibility of research areas and publications by 60%.",
+      "Designed and implemented scalable RESTful API endpoints using Flask, optimising retrieval and processing of complex metagenomic data, resulting in a 45% improvement in response time.",
+      "Built a web application with React and TailwindCSS, enabling advanced search and download functionality for metagenome datasets and improving researcher accessibility by 50%.",
     ],
   },
   {
@@ -245,8 +280,7 @@ const education = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Charan proved me wrong.",
+    testimonial: "Charan delivered a beautifully designed, user-friendly convocation website with exceptional attention to detail and professionalism. Highly reliable and collaborative throughout.",
     name: "Binu Ann Joseph",
     designation: "Junior Administrative Officer",
     company: "Department of Human Centered Design, IIIT Delhi",
@@ -254,7 +288,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Charan does.",
+      "Charan demonstrated exceptional full stack skills, delivering a robust, user-friendly platform that significantly improved our lab's data accessibility, visibility, and overall digital presence.",
     name: "Dr. Tarini Shankar Ghosh",
     designation: "Head",
     company: "Microbiome Informatics Lab, IIIT Delhi",
@@ -262,11 +296,11 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
+      "Charan brought exceptional initiative and versatility, driving product development from idea to MVP. A true builder with strong design, research, and engineering instincts. Invaluable early teammate.",
+    name: "Ganesh Potala",
+    designation: "Founder",
     company: "Stealth Startup",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: ganesh,
   },
 ];
 
@@ -294,66 +328,66 @@ const projects = [
       },
     ],
     image: artisight,
-    source_code_link: "https://github.com/devisri-charan/ArtiSight",
+    source_code_link: "https://github.com/vdevisricharan/ArtiSight",
   },
-  {
-    name: "Alpha Messenger",
-    description:
-      "A full-stack messaging website with real-time chat functionality and a dynamic user interface for efficient communication and data storage.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "SQL",
-        color: "green-text-gradient",
-      },
-    ],
-    image: alpha,
-    source_code_link: "https://github.com/devisri-charan/Alpha-Messenger",
-  },
-  {
-    name: "Icon",
-    description:
-      "A full-stack fashion e-commerce platform incorporating seamless user experiences, secure payment processing, and dynamic product management.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodeJS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "expressJS",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: icon,
-    source_code_link: "https://github.com/devisri-charan/icon",
-  },
+  // {
+  //   name: "Alpha Messenger",
+  //   description:
+  //     "A full-stack messaging website with real-time chat functionality and a dynamic user interface for efficient communication and data storage.",
+  //   tags: [
+  //     {
+  //       name: "html",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "javascript",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "PHP",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "SQL",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: alpha,
+  //   source_code_link: "https://github.com/devisri-charan/Alpha-Messenger",
+  // },
+  // {
+  //   name: "Icon",
+  //   description:
+  //     "A full-stack fashion e-commerce platform incorporating seamless user experiences, secure payment processing, and dynamic product management.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "nodeJS",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "expressJS",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: icon,
+  //   source_code_link: "https://github.com/devisri-charan/icon",
+  // },
   {
     name: " Wasto",
     description:
-      "An ML model to automate most parts of a waste management cycle from source to recycling unit with proper trackage of the waste..",
+      "A ML algorithm to detect and segregate the waste according to organic, Non-Biodegradable, and recycling products at the recycling unit.",
     tags: [
       {
         name: "TensorFlow",
@@ -369,7 +403,28 @@ const projects = [
       },
     ],
     image: wasto,
-    source_code_link: "https://github.com/devisri-charan/wasto",
+    source_code_link: "https://github.com/vdevisricharan/wasto",
+  }, 
+  {
+    name: "SecurePass",
+    description:
+      "A Browser extension that provides an additional layer of security for your saved passwords.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Crypto JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: securepass,
+    source_code_link: "https://github.com/vdevisricharan/securepass",
   },
 ];
 
