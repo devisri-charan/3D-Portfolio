@@ -41,7 +41,7 @@ import jsm from './company/jsm.png';
 import icon from './icon.jpg';
 import alpha from './alpha.png';
 import wasto from "./wasto.png";
-import artisight from "./artisight.jpg";
+import artisight from "./artisight.png";
 import securepass from "./securepass.png";
 
 import binu from "./testimonials/binu.jpg";

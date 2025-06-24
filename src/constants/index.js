@@ -299,7 +299,7 @@ const testimonials = [
       "Charan brought exceptional initiative and versatility, driving product development from idea to MVP. A true builder with strong design, research, and engineering instincts. Invaluable early teammate.",
     name: "Ganesh Potala",
     designation: "Founder",
-    company: "Stealth Startup",
+    company: "Stealth Startup (Social Media Platform)",
     image: ganesh,
   },
 ];
@@ -408,7 +408,7 @@ const projects = [
   {
     name: "SecurePass",
     description:
-      "A Browser extension that provides an additional layer of security for your saved passwords.",
+      "A Browser extension that provides an additional layer of security for your saved passwords, with adjustable protection levels & session management",
     tags: [
       {
         name: "Javascript",
