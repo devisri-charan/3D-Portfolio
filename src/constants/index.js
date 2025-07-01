@@ -1,10 +1,17 @@
 import {
-  logo,
-  // About section images
+  mobile,
   backend,
   creator,
   mobile,
+  mobile,
   web,
+  // Icons
+  github,
+  menu,
+  close,
+  // Technology icons
+  java,
+  python,
   // Icons
   github,
   menu,
@@ -15,15 +22,21 @@ import {
   javascript,
   mongodb,
   nodejs,
+  mongodb,
+  nodejs,
   reactjs,
   redux,
   next,
+  postgresql,
   postgresql,
   tailwind,
   nestjs,
   typescript,
   aws,
+  typescript,
+  aws,
   docker,
+  // Company logos
   // Company logos
   midas,
   microbiome,
@@ -32,8 +45,15 @@ import {
   stealth,
   // Education images
   iiitd,
+  // Education images
+  iiitd,
   sr,
   jsm,
+  // Project images
+  wasto,
+  artisight,
+  securepass,
+  // Testimonials
   // Project images
   wasto,
   artisight,
@@ -58,6 +78,8 @@ export const navLinks = [
     title: "Education",
   },
   {
+    id: "#technologies",
+    title: "Technologies",
     id: "#technologies",
     title: "Technologies",
   },
@@ -394,7 +416,7 @@ const projects = [
     ],
     image: wasto,
     source_code_link: "https://github.com/vdevisricharan/wasto",
-  }, 
+  },
   {
     name: "SecurePass",
     description:
