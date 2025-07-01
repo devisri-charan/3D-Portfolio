@@ -178,7 +178,7 @@ const Navbar = ({ onResumeClick }) => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style jsx="true">{`
         @keyframes slideInRight {
           from {
             opacity: 0;

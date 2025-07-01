@@ -1,45 +1,47 @@
 import {
-  mobile,
+  logo,
+  // About section images
   backend,
   creator,
+  mobile,
   web,
+  // Icons
+  github,
+  menu,
+  close,
+  // Technology icons
+  java,
+  python,
   javascript,
-  typescript,
-  html,
-  css,
+  mongodb,
+  nodejs,
   reactjs,
   redux,
   next,
-  postgressql,
+  postgresql,
   tailwind,
   nestjs,
-  bootstrap,
-  mysql,
-  nodejs,
-  mongodb,
-  git,
-  figma,
+  typescript,
+  aws,
   docker,
-  postman,
-  iiitd,
+  // Company logos
   midas,
   microbiome,
   lumiq,
-  icon,
-  aws,
-  python,
-  java,
-  alpha,
+  hcd,
+  stealth,
+  // Education images
+  iiitd,
+  sr,
+  jsm,
+  // Project images
   wasto,
   artisight,
   securepass,
-  hcd,
-  stealth,
-  sr,
-  jsm,
+  // Testimonials
   binu,
   tarini,
-  ganesh
+  ganesh  
 } from "../assets";
 
 export const navLinks = [
@@ -56,8 +58,8 @@ export const navLinks = [
     title: "Education",
   },
   {
-    id: "#skills",
-    title: "Skills",
+    id: "#technologies",
+    title: "Technologies",
   },
   {
     id: "#projects",
@@ -98,48 +100,37 @@ const services = [
 
 const technologies = [
   {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "python",
+    name: "Python",
     icon: python,
   },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Next JS",
-    icon: next,
-  },
-  {
-    name: "PostgreSQL",
-    icon: postgressql,
+    {
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Bootstrap",
-    icon: bootstrap,
+    name: "React JS",
+    icon: reactjs,
+  },
+  ,
+  {
+    name: "Next JS",
+    icon: next,
   },
   {
-    name: "MySQL",
-    icon: mysql,
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
     name: "Nest JS",
@@ -154,16 +145,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "AWS",
-    icon: aws,
-  },
-  {
     name: "Docker",
     icon: docker,
-  },
-  {
-    name: "Postman",
-    icon: postman,
   },
   {
     name: "java",
@@ -172,16 +155,7 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-
+  }
 ];
 
 const experiences = [

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { About, Contact, Experience, Education, Testimonials, Hero, Navbar, Skills, Projects, StarsCanvas, ResumeModal } from "./components";
+import { About, Contact, Experience, Education, Testimonials, Hero, Navbar, Technologies, Projects, StarsCanvas, ResumeModal } from "./components";
 import { useState } from "react";
 
 const App = () => {
@@ -25,8 +25,8 @@ const App = () => {
               </div>
               <About />
               <Experience />
+              <Technologies />
               <Education />
-              <Skills />
               <Projects />
               <Testimonials />
               <div className="relative z-0">
