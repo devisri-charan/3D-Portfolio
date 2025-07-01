@@ -4,7 +4,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-const TestimonialCard = ({ index, testimonial, name, designation, company, image }) => {
+const TestimonialCard = ({ index, testimonial, name, designation, company, image, linkedin }) => {
   return (
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -24,7 +24,8 @@ const TestimonialCard = ({ index, testimonial, name, designation, company, image
           <img
           src={image}
           alt = {`feedback-by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
+          className="w-10 h-10 rounded-full object-cover cursor-pointer"
+          onClick={() => window.open(linkedin, "_blank")}
           />
         </div>
       </div>

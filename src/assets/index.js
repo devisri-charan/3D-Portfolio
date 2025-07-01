@@ -8,6 +8,7 @@ import web from "./about/web.png";
 
 // Icons
 import github from "./icons/github.png";
+import website from "./icons/website.svg";
 import menu from "./icons/menu.svg";
 import close from "./icons/close.svg";
 
@@ -57,6 +58,7 @@ export {
   mobile,
   web,
   // Icons
+  website,
   github,
   menu,
   close,

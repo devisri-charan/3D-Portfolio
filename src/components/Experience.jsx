@@ -20,7 +20,7 @@ const ExperienceCard = ({ experience }) => (
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
-      <div className="flex justify-center items-center w-full h-full">
+      <div className="flex justify-center items-center w-full h-full cursor-pointer" onClick={() => window.open(experience.website, "_blank")}>
         <img
           src={experience.icon}
           alt={experience.company_name}

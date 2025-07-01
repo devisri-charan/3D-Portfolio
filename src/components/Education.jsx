@@ -20,7 +20,7 @@ const EducationCard = ({ education }) => (
     date={education.date}
     iconStyle={{ background: education.iconBg }}
     icon={
-      <div className="flex justify-center items-center w-full h-full">
+      <div className="flex justify-center items-center w-full h-full cursor-pointer" onClick={() => window.open(education.website, "_blank")}>
         <img
           src={education.icon}
           alt={education.company_name}

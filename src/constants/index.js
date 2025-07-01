@@ -1,14 +1,8 @@
 import {
-  logo,
-  // About section images
+  mobile,
   backend,
   creator,
-  mobile,
   web,
-  // Icons
-  github,
-  menu,
-  close,
   // Technology icons
   java,
   python,
@@ -41,7 +35,8 @@ import {
   // Testimonials
   binu,
   tarini,
-  ganesh  
+  ganesh,  
+  website
 } from "../assets";
 
 export const navLinks = [
@@ -54,12 +49,12 @@ export const navLinks = [
     title: "Experience",
   },
   {
-    id: "#education",
-    title: "Education",
-  },
-  {
     id: "#technologies",
     title: "Technologies",
+  },
+  {
+    id: "#education",
+    title: "Education",
   },
   {
     id: "#projects",
@@ -172,6 +167,7 @@ const experiences = [
       "Created an AI-powered virtual sales agent using LangChain, LangGraph, and LLMs, with a Next.js frontend using SSR and SSG; enabled real-time demos, increasing client engagement by 25%.",
       "Wrote a robust Bash data correction script that removed over 350,000 duplicate financial exposure records for a key insurance client, significantly enhancing data reliability and financial reporting accuracy."
     ],
+    website: "https://lumiq.ai/",
   },
   {
     title: "Product Engineer",
@@ -197,6 +193,7 @@ const experiences = [
       "Designed and implemented scalable RESTful API endpoints using Flask, optimising retrieval and processing of complex metagenomic data, resulting in a 45% improvement in response time.",
       "Built a web application with React and TailwindCSS, enabling advanced search and download functionality for metagenome datasets and improving researcher accessibility by 50%.",
     ],
+    website: "https://microbiome.iiitd.edu.in/",
   },
   {
     title: "Full Stack Developer",
@@ -210,6 +207,7 @@ const experiences = [
       "Developed a dynamic, data-driven frontend using React and TailwindCSS to visualize real-time sensor data, improving user interaction and data interpretation by 50%.",
       "Designed and deployed a fully responsive marketing website to showcase the project, focusing on UX/UI best practices and mobile-first design."
     ],
+    website: "https://midas.iiitd.edu.in/",
   },
   {
     title: "Frontend Developer",
@@ -221,6 +219,7 @@ const experiences = [
       "Conceptualized, designed, and developed the official website for the IIIT Delhi 11th Convocation 2022.",
       "Tech Stack: HTML, CSS, SCSS, Javascript, Bootstrap, Adobe Suite",
     ],
+    website: "https://hcd.iiitd.ac.in/",
   },
 ];
 
@@ -237,6 +236,7 @@ const education = [
       "CGPA: 6.95",
       "Won 1st Place in SMAI Hackathon conducted by Micron Technology India",
     ],
+    website: "https://iiitd.ac.in/",
   },
   {
     title: "Intermediate Education",
@@ -255,6 +255,7 @@ const education = [
       "JEE Advanced 2020 All India Rank: 9110",
       "JEE Advanced 2020 OBC Category Rank: 1700",
     ],
+    website: "https://instagram.com/sreducational_academy",
   },
   {
     title: "Secondary Education",
@@ -265,6 +266,7 @@ const education = [
     points: [
       "CGPA: 10/10",
     ],
+    website: "https://instagram.com/jsmschools",
   }
 ];
 
@@ -275,6 +277,7 @@ const testimonials = [
     designation: "Junior Administrative Officer",
     company: "Department of Human Centered Design, IIIT Delhi",
     image: binu,
+    linkedin: "https://www.linkedin.com/in/binu-ann-joseph-ba889368/",
   },
   {
     testimonial:
@@ -283,6 +286,7 @@ const testimonials = [
     designation: "Head",
     company: "Microbiome Informatics Lab, IIIT Delhi",
     image: tarini,
+    linkedin: "https://www.linkedin.com/in/dr-tarini-shankar-ghosh-3b211868/",
   },
   {
     testimonial:
@@ -291,6 +295,7 @@ const testimonials = [
     designation: "Founder",
     company: "Stealth Startup (Social Media Platform)",
     image: ganesh,
+    linkedin: "https://www.linkedin.com/in/ganesh-potala-144b4a188/",
   },
 ];
 
@@ -298,118 +303,66 @@ const projects = [
   {
     name: "ArtiSight",
     description:
-      "An AI Photo Critique Assistant utilizing LLMs to analyze and critique photos by providing actionable insights and personalized learning recommendations.",
+      "An AI Photo Critique Assistant to analyze and critique photos by providing actionable insights and personalized learning recommendations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwindCSS",
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
       {
-        name: "Flask",
+        name: "flask",
         color: "pink-text-gradient",
       },
       {
-        name: "LLMs",
+        name: "genAI",
         color: "blue-text-gradient",
       },
     ],
     image: artisight,
     source_code_link: "https://github.com/vdevisricharan/ArtiSight",
+    live_link: "https://artisight.netlify.app/",
   },
-  // {
-  //   name: "Alpha Messenger",
-  //   description:
-  //     "A full-stack messaging website with real-time chat functionality and a dynamic user interface for efficient communication and data storage.",
-  //   tags: [
-  //     {
-  //       name: "html",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "javascript",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "PHP",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "SQL",
-  //       color: "green-text-gradient",
-  //     },
-  //   ],
-  //   image: alpha,
-  //   source_code_link: "https://github.com/devisri-charan/Alpha-Messenger",
-  // },
-  // {
-  //   name: "Icon",
-  //   description:
-  //     "A full-stack fashion e-commerce platform incorporating seamless user experiences, secure payment processing, and dynamic product management.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "nodeJS",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "expressJS",
-  //       color: "blue-text-gradient",
-  //     },
-  //   ],
-  //   image: icon,
-  //   source_code_link: "https://github.com/devisri-charan/icon",
-  // },
   {
     name: " Wasto",
     description:
       "A ML algorithm to detect and segregate the waste according to organic, Non-Biodegradable, and recycling products at the recycling unit.",
     tags: [
       {
-        name: "TensorFlow",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "OpenCV",
+        name: "tensorflow",
         color: "green-text-gradient",
       },
       {
-        name: "Bootstrap",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
     image: wasto,
     source_code_link: "https://github.com/vdevisricharan/wasto",
-  }, 
+    live_link: "https://wasto.netlify.app/",
+  },
   {
     name: "SecurePass",
     description:
-      "A Browser extension that provides an additional layer of security for your saved passwords, with adjustable protection levels & session management",
+      "A Browser extension that provides an additional layer of security for your saved passwords, with adjustable protection levels",
     tags: [
       {
-        name: "Javascript",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "Crypto JS",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "html",
         color: "pink-text-gradient",
       },
     ],
