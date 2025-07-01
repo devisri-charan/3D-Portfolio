@@ -1,12 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Resume } from "./components";
-import Education from "./components/Education";
+import { About, Contact, Experience, Education, Testimonials, Hero, Navbar, Skills, Projects, StarsCanvas, ResumeModal } from "./components";
+import { useState } from "react";
 
 const App = () => {
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
+  const handleResumeClick = () => {
+    setIsResumeModalOpen(true);
+  };
+
+  const handleCloseResumeModal = () => {
+    setIsResumeModalOpen(false);
+  };
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <Navbar />
+        <Navbar onResumeClick={handleResumeClick} />
         <Routes>
           <Route path="/" element={
             <>
@@ -15,18 +25,22 @@ const App = () => {
               </div>
               <About />
               <Experience />
-              <Education/>
-              <Tech />
-              <Works />
-              <Feedbacks />
+              <Education />
+              <Skills />
+              <Projects />
+              <Testimonials />
               <div className="relative z-0">
                 <Contact />
                 <StarsCanvas />
               </div>
             </>
           } />
-          <Route path="/resume" element={<Resume />} />
         </Routes>
+        {/* Resume Modal */}
+        <ResumeModal
+          isOpen={isResumeModalOpen}
+          onClose={handleCloseResumeModal}
+        />
       </div>
     </BrowserRouter>
   )

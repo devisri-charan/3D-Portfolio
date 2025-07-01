@@ -2,7 +2,7 @@ import { BallCanvas } from "./canvas";
 import {technologies} from "../constants";
 import {SectionWrapper} from "../hoc";
 
-const Tech = () => {
+const Skills = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((technology) => (
@@ -14,4 +14,4 @@ const Tech = () => {
   )
 }
 
-export default SectionWrapper(Tech,"");
+export default SectionWrapper(Skills,"skills");
