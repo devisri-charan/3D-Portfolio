@@ -6,10 +6,6 @@ import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
-// _Kkr1JMVHHa6gEv5Y
-// service_ippe133
-// template_o7keoyq
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -20,24 +16,25 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const {name, value} = e.target;
-    setForm({...form, [name]: value})
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value })
   }
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.send('service_ippe133',
-    'template_o7keoyq',
-    {
-      from_name: form.name,
-      to_name: "Shre Charan",
-      from_email: form.email,
-      to_email: "shrecharancodes@gmail.com",
-      message: form.message,
-    },
-    '_Kkr1JMVHHa6gEv5Y'
+    emailjs.send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "V Devi Sri Charan",
+        from_email: form.email,
+        to_email: "vdevisricharan@gmail.com",
+        message: form.message,
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     )
-    .then(() => {
+      .then(() => {
         setLoading(false);
         alert("Thank You. I'll get back to you soon!");
         setForm({
@@ -45,11 +42,11 @@ const Contact = () => {
           email: "",
           message: "",
         });
-    }, (error) => {
+      }, (error) => {
         setLoading(false);
         console.log(error.text);
         alert("Something went wrong. Please try again later.");
-    });
+      });
   }
 
   return (
@@ -94,7 +91,7 @@ const Contact = () => {
               Your Message
             </span>
             <textarea
-              rows="7" 
+              rows="7"
               name='message'
               value={form.message}
               onChange={handleChange}
@@ -106,7 +103,7 @@ const Contact = () => {
         </form>
       </motion.div>
       <motion.div variants={slideIn('right', "tween", 0.2, 1)}
-      className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
         <EarthCanvas />
       </motion.div>
     </div>
