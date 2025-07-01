@@ -20,7 +20,8 @@
     "react-router-dom": "^6.14.2",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.155.0"
+    "three": "^0.155.0",
+    "three-stdlib": "^2.36.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
